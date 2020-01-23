@@ -1,0 +1,88 @@
+<html>
+<head>
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap.css">
+<link rel="stylesheet" href="mycss.css">
+
+</head>
+<body onload="readAll()">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+              <a class="nav-link" href="table.html">Table</a>
+            </li>
+        
+          </ul>
+          
+        </div>
+      </nav>
+
+      <div>
+        <h1>Darting Buddy</h1>
+        <h2> Black Horse
+        </h2>
+      </div>
+
+
+    <div id ="mytablediv">
+      <table id ="player-list" class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Player</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+          
+          
+        </tbody>
+      </table> 
+     
+      
+
+      
+    </div>
+    <button type="button" class="btn btn-outline-success" onclick="openForm()">Add Player</button>
+    
+    <div class="form-popup" id="myForm">
+      <form  class="form-container" onsubmit="addPlayer()">
+        <h1>Add Player</h1>
+    
+        <label for="email"><b>Player Name</b></label>
+        <input type="text"  id="player" placeholder="Enter Name" required>
+    
+    
+    
+        <button id= "playersub" type="submit" class="btn btn-success" >Submit</button>
+        <button id="playerclose" type="button" class="btn btn-danger" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+    
+    <div id="myAddGameForm">
+    </div>
+    <div id="myDeletePlayerForm">
+    </div>
+
+    <div id="myEditPlayerForm">
+
+    </div>
+
+
+
+
+  </body>
+  <script src='consts.js'></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="./addplayerpopup.js"> </script>
+
+</html>    

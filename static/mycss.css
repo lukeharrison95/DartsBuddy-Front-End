@@ -1,0 +1,78 @@
+#player-list{
+    position: fixed;
+    width: 25%;
+    margin-left: 10%;
+}
+
+#myForm {
+    display: none;
+    position: fixed;
+    
+    bottom: 50%;
+    right: 50%;
+    border: 3px ;
+    z-index: 9;
+    color: #fff;
+  }
+
+
+
+  #myEditForm {
+    display: none;
+    position: fixed;
+    
+    bottom: 50%;
+    right: 50%;
+    border: 3px ;
+    z-index: 9;
+    color: #fff;
+  }
+
+  #myAddGameForm {
+ 
+    position: fixed;
+    
+    bottom: 50%;
+    right: 50%;
+    border: 3px ;
+    z-index: 9;
+    color: #fff;
+  }
+       
+  #myDeletePlayerForm {
+ 
+    position: fixed;
+    
+    bottom: 50%;
+    right: 50%;
+    border: 3px ;
+    z-index: 9;
+    color: #fff;
+  }
+  #myEditPlayerForm {
+ 
+    position: fixed;
+    
+    bottom: 50%;
+    right: 50%;
+    border: 3px ;
+    z-index: 9;
+    color: #fff;
+  }
+
+  .form-container{
+      background-color: #333;
+      width: 600px;
+  }
+
+.tablebuttons{
+    visibility: none;
+}
+
+#mytablediv{
+overflow: scroll;
+}
+
+
+
+

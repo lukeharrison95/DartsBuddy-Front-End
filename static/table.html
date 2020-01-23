@@ -1,0 +1,63 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="mycss.css">
+</head>
+
+<body onload="createLeagueTable()">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+      aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="table.html">Table</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </nav>
+
+  <div>
+    <h1>Darting Buddy</h1>
+    <h2> Black Horse
+    </h2>
+  </div>
+
+  <div id="myLeagueDiv">
+    <table id="leagueTable" class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Player Name</th>
+          <th scope="col">Won</th>
+          <th scope="col">Drawn</th>
+          <th scope="col">Lost</th>
+          <th scope="col">Points</th>
+        </tr>
+      </thead>
+      <tbody id="leagueBody">
+
+
+      </tbody>
+    </table>
+
+
+
+
+  </div>
+
+</body>
+<script src='consts.js'></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="./leagueTable.js"> </script>
+
+</html>
