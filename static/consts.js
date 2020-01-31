@@ -1,1 +1,1 @@
-const PATH = "http://3.9.100.213:8282/DartsBuddy/";
+const PATH = "BackEndLB-249119918.eu-west-2.elb.amazonaws.com:8080/DartsBuddy/";
